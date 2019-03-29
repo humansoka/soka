@@ -1,0 +1,16 @@
+<!--index.wxml-->
+
+
+
+<view class="product_list" >
+  <block wx:for="{{items}}" wx:key="item">
+    <view index="{{index}}" bindtap="bindViewTap" >
+    <image src="{{item.imageUrl}}"  />
+    <text class='product_title'>{{item.title}}</text>
+    <text class='product_price'><text>￥</text>{{item.price}}</text>
+    <text class='product_start'>{{item.start_num}}张起购</text>
+    <button class="btn_cart" hover-class='hover_bg'><image src="/images/icon_cart3.png"></image></button>
+    </view>
+    
+  </block>
+</view>

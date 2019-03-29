@@ -1,0 +1,26 @@
+<view class="my_login">
+  <image src="{{headUrl}}"  alt=""/>
+  <text>{{nick_name}}</text> 
+</view>
+
+<view class="my_order">
+ <view class="my_order_title">
+   <text>我的订单</text>
+   <view>查看全部订单</view>
+ </view>
+ <view class="my_order_tab">
+  <view><text>待付款</text><text>1</text></view>
+ </view>
+</view>
+
+
+
+<block wx:for="{{items_link}}" wx:key="item" >
+<view  data-url="{{item.link_url}}" bindtap="clickTo" class="setting_link" index="{{index}}" hover-class="hover_bg">
+
+<view ><image src="/images/icon_arrow.png"></image><text>{{item.title}}</text></view>
+
+</view>
+ </block>
+
+
