@@ -12,7 +12,7 @@
 
  <view class="my_order_tab">
   <block wx:for="{{order_tab}}" wx:key="item" >
-  <view><image src="{{item.iconUrl}}"></image><text class='order_name'>{{item.order_name}}</text><text class='order_num'>{{item.order_num}}</text></view>
+  <view data-url="{{item.order_url}}" bindtap="clickOrder"><image src="{{item.iconUrl}}"></image><text class='order_name'>{{item.order_name}}</text><text class='order_num'>{{item.order_num}}</text></view>
   </block>
  </view>
  

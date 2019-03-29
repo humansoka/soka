@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/cart/cart",
     "pages/my/my",
     "pages/index/index",
     "pages/logs/logs",
@@ -29,7 +30,7 @@
       {
         "selectedIconPath": "images/icon_cart2.png",
         "iconPath": "images/icon_cart.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/cart/cart",
         "text": "购物车"
       },
       {

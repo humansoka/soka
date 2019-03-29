@@ -118,14 +118,16 @@
 
 .my_order_tab view text.order_name {
   position: relative;
-  top: 90rpx;
+  display: block;
+  text-align: center;
+  top: 100rpx;
   color: #666;
   font-size: 24rpx;
 }
 
 .my_order_tab view image{
   position: absolute;
-  top: 30rpx;
+  top: 35rpx;
   left: 50%;
   width: 60rpx;
   height: 60rpx;
@@ -136,16 +138,16 @@
 
 
 
-.my_order_tab li a i {
+.my_order_tab view text.order_num {
   position: absolute;
-  top: 0.5rem;
-  left: 4rem;
-  width: 0.75rem;
-  height: 0.75rem;
+  top: 20rpx;
+  left: 160rpx;
+  padding: 0 13rpx;
+  height: 36rpx;
   background-color: #f00;
-  border-radius: 50%;
+  border-radius: 18rpx;
   text-align: center;
-  line-height: 0.75rem;
+  line-height: 36rpx;
   color: #fff;
-  font-size: 0.5rem;
+  font-size:24rpx;
 }

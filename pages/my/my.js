@@ -27,16 +27,18 @@ Page({
       {
         "id": "1",
         "order_name": "待付款",
-        "order_num":2,
+        "order_num":123,
         "iconUrl": "/images/icon_fukuan.png",
+        "order_url": "/pages/detail/detail",
      
 
       },
       {
         "id": "2",
         "order_name": "待发货",
-        "order_num": 3,
+        "order_num": 13,
         "iconUrl": "/images/icon_fahuo.png",
+        "order_url": "/pages/detail/detail",
 
       },
      
@@ -45,6 +47,7 @@ Page({
         "order_name": "待收货",
         "order_num": 3,
         "iconUrl": "/images/icon_shouhuo.png",
+        "order_url": "/pages/detail/detail",
 
       },
 
@@ -65,6 +68,17 @@ Page({
     })
 
     
+  },
+   clickOrder: function (event) {
+
+    let order_url = event.currentTarget.dataset.url;
+
+
+    wx.navigateTo({
+      url: order_url
+    })
+
+
   }
   
 

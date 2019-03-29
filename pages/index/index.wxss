@@ -17,7 +17,7 @@
   background-color: #fff;
   overflow: hidden;
   margin-right: 30rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 30rpx;
 }
 .product_list view:nth-child(odd){ margin-left: 30rpx;float: left;}
 
