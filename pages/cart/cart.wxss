@@ -1,110 +1,23 @@
 /* pages/cart/cart.wxss */
 
 .cart_list {
-  width: 17.5rem;
-  margin: 0.75rem auto;
-  margin-bottom: 5rem;
-  overflow: hidden;
+  width: 690rpx;
+  margin: 30rpx auto;
 }
 
-.cart_list li {
+.cart_cont {
   width: 100%;
   background-color: #fff;
-  border-radius: 0.25rem;
-  margin-bottom: 0.5rem;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
   overflow: hidden;
   position: relative;
 }
 
-.cart_select {
-  float: left;
-  position: relative;
-  width: 2.5rem;
-  height: auto;
-}
-
-.cart_select section {
-  width: 2.5rem;
-  height: auto;
-}
-
-.selected_all section {
-  margin-left: 1.25rem;
-  margin-top: 0.6rem;
-}
-
-.cart_cont > a {
-  width: 15rem;
-  float: left;
-}
-
-.cart_cont > a img {
-  width: 4rem;
-  height: 4rem;
+.cart_cont image {
+  width: 160rpx;
+  height: 160rpx;
   float: left;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.cart_cont > a >font {
-  display: block;
-  width: 10rem;
-  float: left;
-  margin-left: 0.5rem;
-  margin-top: 1rem;
-  font-size: 0.6rem;
-  margin-bottom: 0.25rem;
-  height: 2rem;
-}
-
-.cart_select section .checkbox_xy {
-  margin: 0;
-  margin-left: 0.625rem;
-  top: 1.75rem;
-}
-
-.cart_cont > a span {
-  color: #f00;
-  font-size: 0.75rem;
-  margin-left: 0.5rem;
-  display: block;
-  float: left;
-}
-
-.cart_cont > a span i {
-  font-size: 0.6rem;
-}
-
-.buy_num {
-  position: absolute;
-  right: 0.5rem;
-  bottom: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 0.25rem;
-  height: 1.2rem;
-}
-
-.buy_num a {
-  width: 1.2rem;
-  height: 1.2rem;
-  display: inline-block;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #888;
-}
-
-.buy_num a.btn_disable {
-  color: #ddd;
-}
-
-.buy_num b {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  display: inline-block;
-  font-size: 0.75rem;
-  color: #888;
-  height: 1.2rem;
-  line-height: 1.2rem;
-  width: 2rem;
-  text-align: center;
 }

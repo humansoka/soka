@@ -1,18 +1,1 @@
 <!--pages/cart/cart.wxml-->
-<view class='cart_list'>
-
-  <view class="cart_cont">
-  
-   <view class="cart_select"></view>
-  
-   
-   <image src="/images/youka.jpg" alt=""/>
-   <text>中国石化加油卡500元 自动充值全国通用</text>
-     <text><label>￥</label>399.00</text>
-   
-   
- 
-   <view class="buy_num"><view>-</view><input></input><view>+</view></view>
-  </view>
-
-</view>
