@@ -22,6 +22,34 @@ Page({
       
 
 
+    ],
+    "order_tab": [
+      {
+        "id": "1",
+        "order_name": "待付款",
+        "order_num":2,
+        "iconUrl": "/images/icon_fukuan.png",
+     
+
+      },
+      {
+        "id": "2",
+        "order_name": "待发货",
+        "order_num": 3,
+        "iconUrl": "/images/icon_fahuo.png",
+
+      },
+     
+      {
+        "id": "3",
+        "order_name": "待收货",
+        "order_num": 3,
+        "iconUrl": "/images/icon_shouhuo.png",
+
+      },
+
+
+
     ]
   
 

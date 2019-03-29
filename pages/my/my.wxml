@@ -8,9 +8,15 @@
    <text>我的订单</text>
    <view>查看全部订单</view>
  </view>
+
+
  <view class="my_order_tab">
-  <view><text>待付款</text><text>1</text></view>
+  <block wx:for="{{order_tab}}" wx:key="item" >
+  <view><image src="{{item.iconUrl}}"></image><text class='order_name'>{{item.order_name}}</text><text class='order_num'>{{item.order_num}}</text></view>
+  </block>
  </view>
+ 
+
 </view>
 
 
