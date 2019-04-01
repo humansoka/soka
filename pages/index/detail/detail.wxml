@@ -1,0 +1,20 @@
+<swiper class="swiper" indicator-dots="true" indicator-active-color="#027951" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{movies}}" wx:for-index="index">
+    <swiper-item>
+      <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="detail_inf">
+
+  <text class='detail_price'><text>￥</text>{{detail_price}}</text>
+  <text class='detail_title'>{{detail_title}}</text>
+  <button class="btn_share" hover-class='hover_bg'></button>
+</view>
+<view class='detail_inf2'>
+<block wx:for="{{information}}" wx:key="item">
+ <view><text class="inf_pro">{{item.inf_pro}}</text>
+ <text class="inf_data">{{item.inf_data}}</text></view>
+ </block>
+</view>

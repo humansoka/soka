@@ -1,5 +1,5 @@
 /* pages/cart/cart.wxss */
-
+ @import '/weui.wxss';
 .cart_list {
   width: 690rpx;
   margin: 30rpx auto;
