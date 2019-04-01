@@ -24,7 +24,7 @@
 <block wx:for="{{items_link}}" wx:key="item" >
 <view  data-url="{{item.link_url}}" bindtap="clickTo" class="setting_link" index="{{index}}" hover-class="hover_bg">
 
-<view ><image src="/images/icon_arrow.png"></image><text>{{item.title}}</text></view>
+<view ><image src="/images/icon_arrow.png" ></image><text>{{item.title}}</text></view>
 
 </view>
  </block>

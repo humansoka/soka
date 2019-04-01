@@ -1,4 +1,4 @@
-//my.js
+//detail.js
 Page({
   data: {
     movies: [
@@ -30,7 +30,36 @@ Page({
       },
 
 
-    ]
+    ],
+    "detail_data": [
+      {
+        "id": 1,
+        "detail_data_name": "充值类型",
+        "detail_data_cont": "直充",
+
+      },
+      {
+        "id": 2,
+        "detail_data_name": "品牌",
+        "detail_data_cont": "中国石化",
+
+      },
+      {
+        "id": 3,
+        "detail_data_name": "省份",
+        "detail_data_cont": "全国通用",
+
+      },
+      {
+        "id": 4,
+        "detail_data_name": "面值",
+        "detail_data_cont": "500元",
+
+      },
+
+
+    ],
+    "btm_cart_num" :5,
   }, 
 
  

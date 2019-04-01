@@ -13,8 +13,66 @@
   <button class="btn_share" hover-class='hover_bg'></button>
 </view>
 <view class='detail_inf2'>
-<block wx:for="{{information}}" wx:key="item">
- <view><text class="inf_pro">{{item.inf_pro}}</text>
- <text class="inf_data">{{item.inf_data}}</text></view>
- </block>
+  <block wx:for="{{information}}" wx:key="item">
+    <view>
+      <text class="inf_pro">{{item.inf_pro}}</text>
+      <text class="inf_data">{{item.inf_data}}</text>
+    </view>
+  </block>
+</view>
+
+<view class="detail_data">
+  <view class="detail_inf_title">商品信息</view>
+  <block wx:for="{{detail_data}}" wx:key="item">
+    <view>
+      <text class='detail_data_name'>{{item.detail_data_name}}</text>
+      <text class='detail_data_cont'>{{item.detail_data_cont}}</text>
+    </view>
+  </block>
+
+</view>
+<view class="clearfix"></view>
+
+<view class="detail_content">
+  <image src='/images/youka.jpg' style="width:750prx; height:750rpx;"></image>
+</view>
+
+<view class="btm_bar">
+
+  <div class="buy_op">
+    <view class="btn_cart">
+      <text>{{btm_cart_num}}</text>
+    </view>
+    <view class="btn_add">加入购物车</view>
+    <!--添加btn_disable按钮变灰-->
+    <view class="btn_buy">立即购买</view>
+  </div>
+
+</view>
+
+<view class="pop_bg">
+
+  <view class="pop_select_cont">
+    <view class="btn_pop_close">+</view>
+    <view class="pop_select_title">
+      <image src="/images/youka.jpg"  />
+      <text class="pop_detail_title">{{detail_title}}</text>
+      <text class="pop_detail_price"><text>￥</text>{{detail_price}}</text>
+    </view>
+
+
+    <view class="pop_select_num">
+      <text class='pop_buy_num'>购买数量
+        <text>库存2521张</text>
+      </text>
+      <view class="num_select">
+        <view class="btn_disable2">-</view>
+        <input type='number' value='3'></input>
+        <view >+</view>
+      </view>
+    </view>
+    <view class="pop_submit">确定</view>
+
+  </view>
+
 </view>
