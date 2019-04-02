@@ -1,7 +1,7 @@
 <!--pages/cart/cart.wxml-->
 <view class="cart_list">
-  <block wx:for="{{cart_list}}" wx:key="item">
- 
+  <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{cart_list}}" wx:key="">
+  <view class="content">
     <view class="cart_cont">
        <view class="item_select" >
   <image bindtap="switchSelect"  data-index="{{index}}" data-id="{{index}}" src="{{item.isSelect?'/images/icon_select.png':'/images/icon_unselect.png'}}" />
@@ -17,7 +17,9 @@
         <view class="{{item.max_num}}">+</view>
       </view>
     </view>
-  </block>
+    </view>
+    <view class="del" catchtap="del" data-index="{{index}}">删除</view>
+  </view>
 </view>
 
 <view class="btm_bar">
