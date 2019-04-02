@@ -9,13 +9,13 @@ Page({
       {
         "id": "1",
         "title": "收货地址",
-        "link_url": "/pages/my/order/order",
+        "link_url": "",
 
       },
       {
         "id": "2",
         "title": "联系客服",
-        "link_url": "/pages/my/kefu/kefu",
+        "link_url": "",
 
       },
 

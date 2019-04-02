@@ -1,6 +1,7 @@
 //detail.js
 Page({
   data: {
+    hiddenName: true,
     movies: [
       { url: '/images/youka.jpg' },
       { url: '/images/youka2.jpg' },
@@ -62,5 +63,9 @@ Page({
     "btm_cart_num" :5,
   }, 
 
- 
+  clickMe: function (e) {
+    this.setData({
+      hiddenName: !this.data.hiddenName
+    })
+  }
 })

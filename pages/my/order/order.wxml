@@ -1,2 +1,54 @@
 <!--pages/my/order/order.wxml-->
-<text>pages/my/order/order.wxml</text>
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="" hidden="{{activeIndex != 0}}">
+
+          <view class="order_list">
+            <block wx:for="{{order_list}}" wx:key="item">
+              <view>
+                <view class="order_status">
+                  <text class="order_id">订单编号:{{item.order_id}}</text>
+                  <text class="order_stat">{{item.order_stat}}</text>
+                </view>
+                <view class="order_detail" wx:for="{{item.order_detail}}" wx:for-item="order_detail" wx:key="item">
+                  <image src="{{order_detail.orderUrl}}" />
+                  <text class="order_list_title">{{order_detail.order_list_title}}</text>
+                  <text class="order_list_price"><text>￥</text>{{order_detail.order_list_price}}</text>
+                  <text class="order_list_by">x{{order_detail.order_list_by}}</text>
+                </view>
+                <view class="order_sum">
+                  <text class="order_list_num">共<text>{{item.order_list_num}}</text>件商品</text>
+                  <text class="order_list_total">
+                  <text>合计：</text>
+                  <text class="order_list_total_price"><text>￥</text>{{item.total_price}}</text>
+                  </text>
+                </view>
+                <view class="order_op" >
+                  <view >
+                  <block  wx:for="{{item.order_op}}" wx:for-item="order_op" wx:key="item">
+                    <view class="{{order_op.op_class}} ">{{order_op.op_name}}</view>
+                  </block>
+                  </view>
+                </view>
+              </view>
+            </block>
+          </view>
+
+        </view>
+        <view class="no_data" hidden="{{activeIndex != 1}}">暂无数据</view>
+        <view class="no_data" hidden="{{activeIndex != 2}}">暂无数据</view>
+        <view class="no_data" hidden="{{activeIndex != 3}}">暂无数据</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,198 @@
+/* pages/order_confirm/order_confirm.wxss */
+@import "/pages/index/detail/detail.wxss";
+
+.add_address {
+  height: 120rpx;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  line-height: 120rpx;
+  text-indent: 100rpx;
+}
+
+.add_address_bg {
+  position: absolute;
+  left: 0;
+  bottom: 0rpx;
+  width: 100%;
+  height: 6rpx;
+  background-size: contain;
+}
+
+.icon_arrow {
+  position: absolute;
+  top: 50%;
+  right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: -20rpx;
+  background-size: 40rpx 40rpx;
+}
+
+.icon_add {
+  position: absolute;
+  top: 50%;
+  left: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: -20rpx;
+  background-size: 40rpx 40rpx;
+}
+
+.confirm_address {
+  min-height: 120rpx;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.address_person {
+  font-size: 30rpx;
+  font-weight: bold;
+  display: block;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-indent: 80rpx;
+  position: relative;
+}
+
+.icon_position {
+  position: absolute;
+  top: 90rpx;
+  left: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  background-size: 40rpx 40rpx;
+}
+
+.address_tel {
+  position: absolute;
+  right: 80rpx;
+  top: 0;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+}
+
+.address_location {
+  display: block;
+  width: 600rpx;
+  font-size: 24rpx;
+  color: #888;
+  padding-bottom: 30rpx;
+  margin-left: 80rpx;
+}
+
+.order_total {
+  line-height: 100rpx;
+  font-size: 30rpx;
+  position: absolute;
+  right: 320rpx;
+  text-align: right;
+}
+
+.order_total text {
+  color: #f00;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.order_total text text {
+  font-size: 24rpx;
+}
+/* 提交订单列表*/
+
+.order_list {
+  width: 710rpx;
+  margin: 20rpx auto;
+  overflow: hidden;
+  
+}
+
+.order_list > view {
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.order_detail {
+  border-bottom: 1px dotted #eee;
+  width: 650rpx;
+  margin: 0 auto;
+  padding-bottom: 10rpx;
+  overflow: hidden;
+}
+
+.order_detail image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 20rpx;
+  float: left;
+}
+
+.order_list_title {
+  float: left;
+  font-size: 30rpx;
+  width: 470rpx;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  height: 80rpx;
+  line-height:40rpx;
+  overflow: hidden;
+}
+
+.order_list_price {
+  float: left;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  width: 460rpx;
+  top:10rpx;
+}
+
+.order_list_price text {
+  font-size: 24rpx;
+}
+
+.order_list_by {
+  float:left;
+  margin-left: 20rpx;
+  color: #888;
+  font-size: 24rpx;
+  position: relative;
+  top: -6rpx;
+}
+
+.order_sum {
+  width: 650rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0 auto;
+}
+
+.order_list_num  {
+  color: #888;
+  font-size: 24rpx;
+}
+
+.order_list_num text {
+  color: #444;
+  margin: 0 4rpx;
+  font-weight: normal;
+}
+
+.order_list_total{
+  color: #888;
+  float: right;
+   font-size: 24rpx;
+}
+
+.order_list_total_price{
+  color: #f00;
+  font-size: 30rpx;
+}
+
+.order_list_total_price text {
+  font-size: 24rpx;
+}

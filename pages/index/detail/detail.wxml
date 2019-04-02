@@ -43,14 +43,14 @@
     <view class="btn_cart">
       <text>{{btm_cart_num}}</text>
     </view>
-    <view class="btn_add">加入购物车</view>
+    <view class="btn_add" bindtap='clickMe'>加入购物车</view>
     <!--添加btn_disable按钮变灰-->
     <view class="btn_buy">立即购买</view>
   </div>
 
 </view>
 
-<view class="pop_bg">
+<view class="pop_bg" hidden="{{hiddenName}}">
 
   <view class="pop_select_cont">
     <view class="btn_pop_close">+</view>
@@ -71,7 +71,7 @@
         <view >+</view>
       </view>
     </view>
-    <view class="pop_submit">确定</view>
+    <view class="pop_submit" bindtap='clickMe'>确定</view>
 
   </view>
 

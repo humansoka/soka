@@ -1,0 +1,55 @@
+<!--pages/my/order/order_detail/order_detail.wxml-->
+<view class="order_detail_status">
+  <view>
+    <image src="/images/icon_order.png" />
+  </view>
+  <text>{{order_detail_status}}</text>
+
+</view>
+
+<view class="confirm_address">
+  <image class="icon_position" src="/images/icon_position.png" />
+  <image class="add_address_bg" src="/images/address_bar.jpg" />
+  <text class="address_person">收货人：{{address_person}}</text>
+  <text class="address_tel">{{address_tel}}</text>
+  <text class="address_location">收货地址：{{address_location}}</text>
+
+</view>
+
+<view class="order_list">
+  <block wx:for="{{order_list}}" wx:key="item">
+    <view>
+      <view class="order_detail">
+        <image src="{{item.orderUrl}}" />
+        <text class="order_list_title">{{item.order_list_title}}</text>
+        <text class="order_list_price"><text>￥</text>{{item.order_list_price}}</text>
+        <text class="order_list_by">x{{item.order_list_by}}</text>
+      </view>
+      <view class="order_sum">
+        <text class="order_list_num">共<text>{{item.order_list_by}}</text>件商品</text>
+        <text class="order_list_total">
+          <text>合计：</text>
+        <text class="order_list_total_price"><text>￥</text>{{item.order_list_by*item.order_list_price}}</text>
+        </text>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="order_total_list">
+
+
+  <view wx:for="{{order_total_list}}" wx:key="item">
+    <text class="order_total_title">{{item.order_total_title}}</text>
+    <text class="order_total_data {{item.order_total_class}}"><text>{{item.order_total_money}}</text>{{item.order_total_data}}</text>
+  </view>
+
+</view>
+
+<view class="order_op">
+  <view>
+    <block wx:for="{{order_op}}"  wx:key="item">
+      <view class="{{item.op_class}} ">{{item.op_name}}</view>
+    </block>
+  </view>
+</view>

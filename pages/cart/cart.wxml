@@ -1,13 +1,37 @@
 <!--pages/cart/cart.wxml-->
+<view class="cart_list">
+  <block wx:for="{{cart_list}}" wx:key="item">
+ 
+    <view class="cart_cont">
+       <view class="item_select" >
+  <image bindtap="switchSelect"  data-index="{{index}}" data-id="{{index}}" src="{{item.isSelect?'/images/icon_select.png':'/images/icon_unselect.png'}}" />
+  </view>
 
-<checkbox-group bindchange="checkboxChange">
-  <label class="" wx:for="{{checkboxItems}}" wx:key="value">
-    <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+      <image src="{{item.cart_imgUrl}}" />
+      <text class="cart_cont_title">{{item.cart_cont_title}}</text>
+      <text class="cart_cont_price"><text>￥</text>{{item.cart_cont_price}}</text>
 
-    <view class="weui-cell__hd weui-check__hd_in-checkbox">
-      <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
-      <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+      <view class="num_select">
+        <view class="{{item.min_num}}">-</view>
+        <input type='number' value="{{item.input_num}}"></input>
+        <view class="{{item.max_num}}">+</view>
+      </view>
     </view>
+  </block>
+</view>
 
-  </label>
-</checkbox-group>
+<view class="btm_bar">
+
+  <view class="buy_op">
+    <view class="item_select_all">
+    <image class="item-allselect" bindtap="allSelect" src="{{isAllSelect?'/images/icon_select.png':'/images/icon_unselect.png'}}" />
+
+    <text>全选</text></view>
+    <view class="order_total">合计：
+      <text><text>￥</text>{{cart_sum}}</text>
+    </view>
+    <view class="btn_buy {{btn_disable}}">结算(3)</view>
+  </view>
+
+</view>
+

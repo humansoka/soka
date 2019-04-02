@@ -1,14 +1,14 @@
 {
   "pages": [
-    
-    "pages/index/detail/detail",
+      
     "pages/cart/cart",
-    "pages/my/my",
     "pages/index/index",
-    "pages/logs/logs",
-   
-    "pages/my/kefu/kefu",
-    "pages/my/order/order"
+    "pages/my/order/order_detail/order_detail",
+    "pages/my/order/order",
+ "pages/order_confirm/order_confirm",
+    "pages/index/detail/detail",
+    "pages/my/my",
+    "pages/my/kefu/kefu"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -351,8 +351,8 @@ page {
 }
 
 .num_select input {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+  border-left: 1rpx solid #ddd;
+  border-right: 1rpx solid #ddd;
   display: inline-block;
   font-size: 30rpx;
   color: #888;
