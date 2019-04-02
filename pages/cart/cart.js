@@ -75,11 +75,13 @@ Page({
     // 获取item项的id，和数组的下标值  
   
     let id = e.target.dataset.id,
+     
 
       index = parseInt(e.target.dataset.index);
     this.data.cart_list[index].isSelect = !this.data.cart_list[index].isSelect;
    
     this.setData({
+     
       cart_list: this.data.cart_list,
    
     })
